@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Main Page.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Autentificare</h2>
+        <label for="role">Selectează rolul:</label>
+        <select id="role">
+            <option value="elev">Elev/Părinte</option>
+            <option value="Administrator">Administrator</option>
+            <option value="pedagog">Pedagog</option>
+            <option value="slujitor">Slujitor Serie</option>
+            <option value="director">Director</option>
+        </select>
+        <label for="username">Utilizator:</label>
+        <input type="text" placeholder="Utilizator" id="username">
+        <label for="password">Parolă:</label>
+        <input type="password" placeholder="Parolă" id="password">
+
+        <!-- Mesaj de eroare -->
+        <div id="error-message" class="error-message"></div>
+
+        <div class="remember-me">
+            <input type="checkbox" id="remember">
+            <label for="remember">Nu mă deconecta</label>
+        </div>
+
+        <button onclick="login()">Autentificare</button>
+    </div>
+
+    <!-- Include Firebase SDK (v9 compat) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+
+    <!-- Include fișierul tău JavaScript -->
+    <script src="Login.js"></script>
+
+    <script>
+        // Verifică dacă utilizatorul este deja autentificat
+        const isAuthenticated = localStorage.getItem('isAuthenticated');
+        if (isAuthenticated === 'true') {
+            // Dacă este autentificat, redirecționează către pagina principală
+            window.location.href = 'Pagina Principala/Pagina Principala.html';
+        }
+    </script>
+</body>
+</html>

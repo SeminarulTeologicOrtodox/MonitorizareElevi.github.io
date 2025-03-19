@@ -1,0 +1,117 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-image: url("Background.Jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: initial;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 30px; /* Am mărit padding-ul */
+    border-radius: 10px; /* Am rotunjit mai mult colțurile */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Am intensificat umbra */
+    text-align: center;
+    width: 350px; /* Am mărit lățimea meniului */
+}
+
+h2 {
+    margin-bottom: 25px; /* Am mărit spațiul sub titlu */
+    font-size: 24px; /* Am mărit fontul */
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 16px; /* Am mărit textul etichetelor */
+}
+
+select, input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+select {
+    height: 46px; /* Forțează înălțimea să fie la fel ca input-urile */
+    line-height: 46px;
+    padding-left: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+.success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    transition: background 0.3s ease;
+    background: #004080;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px; /* Am mărit dimensiunea fontului butonului */
+    font-weight: bold;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center; /* Aliniază checkbox-ul și textul pe același rând */
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.remember-me input {
+    margin-right: 8px; /* Adaugă spațiu între checkbox și text */
+    width: 18px;
+    height: 18px;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    button {
+        font-size: 16px;
+    }
+}
+

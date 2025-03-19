@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminarul Teologic Ortodox "Sfântul Grigorie Teologul" Craiova</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Meniu de navigare -->
+    <nav>
+        <ul>
+            <li><button onclick="showSection('serii')">Serii</button></li>
+            <li><button onclick="showSection('camere')">Camere</button></li>
+            <li><button onclick="showSection('meditatii')">Meditații</button></li>
+            <li><button onclick="showSection('elevi')">Elevi</button></li>
+        </ul>
+    </nav>
+
+    <!-- Secțiuni -->
+    <section id="serii" class="content-section">
+        <h2>Serii</h2>
+        <p>Aici veți găsi lista seriilor și prezența/absența la meditații.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Serie</th>
+                    <th>Prezență</th>
+                    <th>Absență</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Seria 1</td>
+                    <td>20</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Seria 2</td>
+                    <td>18</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="camere" class="content-section" style="display: none;">
+        <h2>Camere</h2>
+        <p>Aici veți găsi starea curățeniei în camere.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Cameră</th>
+                    <th>Stare curățenie</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Camera 101</td>
+                    <td>Curat</td>
+                </tr>
+                <tr>
+                    <td>Camera 102</td>
+                    <td>Necurat</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="meditatii" class="content-section" style="display: none;">
+        <h2>Meditații</h2>
+        <p>Aici veți găsi detaliile meditațiilor.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Meditație</th>
+                    <th>Ora</th>
+                    <th>Profesor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Teologie Dogmatică</td>
+                    <td>10:00</td>
+                    <td>Pr. Prof. Ionescu</td>
+                </tr>
+                <tr>
+                    <td>Liturgică</td>
+                    <td>12:00</td>
+                    <td>Pr. Prof. Popescu</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="elevi" class="content-section" style="display: none;">
+        <h2>Elevi</h2>
+        <p>Aici veți găsi lista elevilor și camerele lor.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nume</th>
+                    <th>Cameră</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ion Popescu</td>
+                    <td>101</td>
+                </tr>
+                <tr>
+                    <td>Maria Ionescu</td>
+                    <td>102</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
